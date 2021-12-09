@@ -69,6 +69,6 @@ struct WebView: UIViewRepresentable {
 
 struct WebView_Previews: PreviewProvider {
     static var previews: some View {
-        WebView(html: nil, request: URLRequest(url: URL(string: "https://www.byu.edu")!))
+        WebView(html: "<h1>Hello World</h1>", request: URLRequest(url: URL(string: "https://www.byu.edu")!))
     }
 }

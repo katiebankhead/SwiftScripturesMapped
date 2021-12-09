@@ -99,4 +99,11 @@ extension GeoPlace {
     var coordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
+    
+    func isEqualToPlace(_ placeToCompare: GeoPlace) -> Bool {
+        let DELTA = 0.0000001
+        
+        return (abs(placeToCompare.latitude - self.latitude) < DELTA &&
+                abs(placeToCompare.longitude - self.longitude) < DELTA)
+    }
 }

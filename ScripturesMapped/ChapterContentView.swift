@@ -24,29 +24,26 @@ struct ChapterContentView: View {
     }
     
     var body: some View {
-        ScrollView {
-//            WebView(html: html, request: nil)
-//                .injectNavigationHandler { geoPlaceId in
-//                    print("user selected \(geoPlaceId)")
-//                    viewModel.focusOnGeoPlaceId(geoPlaceId)
-//                }
-//                .navigationBarTitle(title())
-//                .navigationBarTitleDisplayMode(.inline)
-//                .onAppear {
-//                    viewModel.setGeocodedPlaces(ScriptureRenderer.shared.geoPlaces(for: book, chapter: chapter))
-            Text(html)
+        WebView(html: html, request: nil)
+            .injectNavigationHandler { geoPlaceId in
+                print("user selected \(geoPlaceId)")
+                viewModel.focusOnGeoPlaceId(geoPlaceId)
             }
-        }
+            .navigationBarTitle(title())
+            .navigationBarTitleDisplayMode(.inline)
+            .onAppear {
+                viewModel.setGeocodedPlaces(ScriptureRenderer.shared.geoPlaces(for: book, chapter: chapter))
+            }
     }
     
-//    private func title() -> String {
-//        if chapter > 0 {
-//            return "\(book.fullName) \(chapter)"
-//        } else {
-//            return book.fullName
-//        }
-//    }
-//}
+    private func title() -> String {
+        if chapter > 0 {
+            return "\(book.fullName) \(chapter)"
+        } else {
+            return book.fullName
+        }
+    }
+}
 
 struct ChapterContentView_Previews: PreviewProvider {
     static var previews: some View {
