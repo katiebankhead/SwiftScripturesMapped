@@ -11,6 +11,7 @@ import MapKit
 class ViewModel: ObservableObject, GeoPlaceCollector {
     
     @Published var geoPlaces = [GeoPlace]()
+    @Published var isDetailVisible: Bool = false
     @Published var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 31.778389,
                                        longitude: 35.234736),
