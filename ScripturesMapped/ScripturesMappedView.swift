@@ -10,7 +10,7 @@ import MapKit
 
 struct ScripturesMappedView: View {
     
-    @EnvironmentObject var viewModel: ViewModel
+    @EnvironmentObject var viewModel: GeoPlaceViewModel
     
     var body: some View {
         NavigationView {

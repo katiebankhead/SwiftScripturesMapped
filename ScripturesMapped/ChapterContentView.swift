@@ -10,7 +10,7 @@ import MapKit
 
 struct ChapterContentView: View {
     
-    @EnvironmentObject var viewModel: ViewModel
+    @EnvironmentObject var viewModel: GeoPlaceViewModel
     @State private var displayMapView = false
     
     var book: Book
@@ -74,13 +74,12 @@ struct ChapterContentView: View {
 }
 
 struct PrimaryDetailView: View {
-    @EnvironmentObject var viewModel: ViewModel
+    @EnvironmentObject var viewModel: GeoPlaceViewModel
     
     var body: some View {
         GeometryReader { geometry in
             MapView()
                 .onAppear {
-                    print("geometry.size: \(geometry.size.height)")
                     viewModel.isDetailVisible = geometry.frame(in: .global).maxY > 0
                 }
         }
@@ -88,7 +87,7 @@ struct PrimaryDetailView: View {
 }
 
 struct MapView: View {
-    @EnvironmentObject var viewModel: ViewModel
+    @EnvironmentObject var viewModel: GeoPlaceViewModel
 
     var body: some View {
         Map(coordinateRegion: $viewModel.region, annotationItems: viewModel.geoPlaces) { geoPlace in
@@ -105,7 +104,9 @@ struct MapView: View {
                         
                     }
             }
-        .navigationTitle("Testing title")
+//        .navigationTitle("Testing title")
+//        if pin is selected, display pin.placename
+//        else, display chapter name (ex. "Joshua 10")
         .edgesIgnoringSafeArea(.all)
     }
 }

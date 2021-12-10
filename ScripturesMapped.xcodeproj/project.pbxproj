@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B43074EE2D6EC524987936F /* Pods_ScripturesMapped.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA5C43CA05D5191637EA441 /* Pods_ScripturesMapped.framework */; };
-		A223E84F275EB16F00273005 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223E84E275EB16F00273005 /* ViewModel.swift */; };
+		A223E84F275EB16F00273005 /* GeoPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223E84E275EB16F00273005 /* GeoPlaceViewModel.swift */; };
 		A2B85C782746AB2D00C8D043 /* ScripturesMappedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B85C772746AB2D00C8D043 /* ScripturesMappedApp.swift */; };
 		A2B85C7A2746AB2D00C8D043 /* ScripturesMappedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B85C792746AB2D00C8D043 /* ScripturesMappedView.swift */; };
 		A2B85C7C2746AB3100C8D043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2B85C7B2746AB3100C8D043 /* Assets.xcassets */; };
@@ -35,7 +35,7 @@
 /* Begin PBXFileReference section */
 		3E48098CA08AEA3D1B535610 /* Pods-ScripturesMapped.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScripturesMapped.debug.xcconfig"; path = "Target Support Files/Pods-ScripturesMapped/Pods-ScripturesMapped.debug.xcconfig"; sourceTree = "<group>"; };
 		88F0FC8887A4C51A2757692E /* Pods-ScripturesMapped.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScripturesMapped.release.xcconfig"; path = "Target Support Files/Pods-ScripturesMapped/Pods-ScripturesMapped.release.xcconfig"; sourceTree = "<group>"; };
-		A223E84E275EB16F00273005 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A223E84E275EB16F00273005 /* GeoPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoPlaceViewModel.swift; sourceTree = "<group>"; };
 		A2B85C742746AB2D00C8D043 /* ScripturesMapped.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScripturesMapped.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B85C772746AB2D00C8D043 /* ScripturesMappedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScripturesMappedApp.swift; sourceTree = "<group>"; };
 		A2B85C792746AB2D00C8D043 /* ScripturesMappedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScripturesMappedView.swift; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 		A2D70D4E2758A59E004A7D97 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				A223E84E275EB16F00273005 /* ViewModel.swift */,
+				A223E84E275EB16F00273005 /* GeoPlaceViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 				A2D70D4827589C10004A7D97 /* String+Extensions.swift in Sources */,
 				A2D70D4527589C10004A7D97 /* Scripture.swift in Sources */,
 				A2B85C7A2746AB2D00C8D043 /* ScripturesMappedView.swift in Sources */,
-				A223E84F275EB16F00273005 /* ViewModel.swift in Sources */,
+				A223E84F275EB16F00273005 /* GeoPlaceViewModel.swift in Sources */,
 				A2D70D5927598D22004A7D97 /* ChapterGridView.swift in Sources */,
 				A2D70D4927589C10004A7D97 /* GeoDatabase.swift in Sources */,
 				A2D70D4227589C10004A7D97 /* GeoCategory.swift in Sources */,

@@ -195,10 +195,6 @@ class GeoDatabase {
                 return volumes
             }
 
-            for volume in volumes {
-                print(volume)
-            }
-
             return volumes
         } catch {
             return []

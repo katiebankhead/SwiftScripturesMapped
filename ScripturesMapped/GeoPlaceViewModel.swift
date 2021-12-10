@@ -1,5 +1,5 @@
 //
-//  ViewModel.swift
+//  GeoPlaceViewModel.swift
 //  ScripturesMapped
 //
 //  Created by Katie Bankhead on 12/6/21.
@@ -8,7 +8,7 @@
 import Foundation
 import MapKit
 
-class ViewModel: ObservableObject, GeoPlaceCollector {
+class GeoPlaceViewModel: ObservableObject, GeoPlaceCollector {
     
     @Published var geoPlaces = [GeoPlace]()
     @Published var isDetailVisible: Bool = false
