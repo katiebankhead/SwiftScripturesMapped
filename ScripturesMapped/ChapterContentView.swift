@@ -26,7 +26,6 @@ struct ChapterContentView: View {
     var body: some View {
         WebView(html: html, request: nil)
             .injectNavigationHandler { geoPlaceId in
-                print("user selected \(geoPlaceId)")
                 viewModel.focusOnGeoPlaceId(geoPlaceId)
             }
             .navigationBarTitle(title())
